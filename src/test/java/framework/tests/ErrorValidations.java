@@ -1,9 +1,10 @@
 package framework.tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.List;
 
-import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
@@ -27,7 +28,7 @@ public class ErrorValidations extends BaseTest {
 			String productName = "ADIDAS ORIGINAL";
 			loginPage.loginApplication("dummy1997@gmail.com", "Star996"); //Entering Username and password
 			
-			Assert.assertEquals("Incorrect email  password.", loginPage.getErrorMessage());
+			AssertJUnit.assertEquals("Incorrect email  password.", loginPage.getErrorMessage());
 		}
 	
 	@Test

@@ -76,11 +76,15 @@
     <version>5.7.0</version>
 </dependency>
 
-  	<dependency>
-  		<groupId>rahulshettyacademy</groupId>
-  		<artifactId>selenium-java</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.raml.jaxrs/jaxrs-code-generator -->
+<dependency>
+    <groupId>org.raml.jaxrs</groupId>
+    <artifactId>jaxrs-code-generator</artifactId>
+    <version>3.0.7</version>
+</dependency>
+
+
   	
   	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
 <dependency>

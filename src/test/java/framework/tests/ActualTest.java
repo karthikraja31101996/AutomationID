@@ -1,12 +1,13 @@
 package framework.tests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -47,7 +48,7 @@ public class ActualTest extends BaseTest {
 		ConfirmationPage confirmPage = checkout.placeOrderButton();
 		
 		String confirmMessage = confirmPage.confirmMessage();
-		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+		AssertJUnit.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 	}
 			
 		//To Verify ADIDAS original is displayed in the product file
